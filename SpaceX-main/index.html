@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceX</title>
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+  <link rel="stylesheet" href="styles/generalstyle.css">
+  <link rel="stylesheet" href="styles/headerstyle.css">
+  <link rel="stylesheet" href="styles/mainstyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
+                
+</head>
+<body  onload="moveUp()">
+  <nav class="container-fluid position-fixed pt-4 mt-3">
+    <div class="d-flex ">
+      <a class="navbar-brand ms-3 me-2" href="">
+        <a href="" class="logo">
+          <img class="spacex1" src="spacex.png">
+         </a>
+        </a>
+
+    
+      <div class="d-xl-flex d-none pt-2">
+        <!-- lg changed to xl -->
+        <a href="" class="nav-link text-white ps-lg-4 ps-3"><span class="un">FALCON 9</span></a>
+        <a href="" class="nav-link text-white ps-lg-4 ps-3"><span class="un">FALCON HEAVY</span></a>
+        <a href="" class="nav-link text-white ps-lg-4 ps-3"><span class="un">DRAGON</span></a>
+        <a href="" class="nav-link text-white ps-lg-4 ps-3"><span class="un">STARSHIP</span></a>
+        <a href="" class="nav-link text-white ps-lg-4 ps-3"><span class="un">HUMAN SPACEFLIGHT</span></a>
+        <a href="" class="nav-link text-white ps-lg-4 ps-3"><span class="un">RIDESHARE</span></a>
+        <a href="" class="nav-link text-white ps-lg-4 ps-3"><span class="un">STARLINK</span></a>
+    </div>
+    <div class="d-flex ms-auto me-3 pt-2">
+      <a href="" class="nav-link text-white d-xl-block d-none"><span class="un">SHOP</span></a>
+      <button class="order-last hamburger pt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="closeButton()">
+        <div id="bar1" class="bar" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+        <div id="bar2" class="bar" style="width: 100%; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+        <div id="bar3" class="bar" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+    </button>
+    </div>
+    </div>
+    <aside id="sidebar" class="sidebar text-white">
+      <div class="d-xl-none sidebar-text">
+        <p class="text-end pb-2">FALCON 9</p>
+      </div>
+      <div class="d-xl-none sidebar-text">
+        <p class="text-end pb-2">FALCON HEAVY</p>
+      </div>
+      <div class="d-xl-none sidebar-text">
+        <p class="text-end pb-2">DRAGON</p>
+      </div>
+      <div class="d-xl-none sidebar-text">
+        <p class="text-end pb-2">STARSHIP</p>
+      </div>
+      <div class="d-xl-none sidebar-text">
+        <p class="text-end pb-2">HUMAN SPACEFLIGHT</p>
+      </div>
+      <div class="d-xl-none sidebar-text">
+        <p class="text-end pb-2">RIDESHARE</p>
+      </div>
+      <div class="d-xl-none sidebar-text">
+        <p class="text-end pb-2">STARLINK</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pb-2">MISSION</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pt-2 pb-2">LAUNCHES</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pt-2 pb-2">CAREERS</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pt-2 pb-2">UPDATES</p>
+      </div>
+      <div class="sidebar-text">
+        <p class="text-end pt-2 pb-2">SHOP</p>
+      </div>
+    </aside>
+  </nav>
+  <section class="container-fluid background-1">
+    <div class="row h-100 ">
+        <div class="col-md-4 col-sm-6 col-12 text-white d-flex flex-column justify-content-end main-content pb-5 mb-5 ps-5">
+          <h4 id="load-transition-1">UPCOMING LAUNCH</h4>
+          <h2 id="load-transition-2" class="crs-heading pb-3">CRS-26 MISSION</h2>
+          <div>
+            <button id="load-transition-3" class="watch-button text-white">WATCH</button>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="container-fluid background-2" onmouseover="animates()">
+    <div class="row h-100">
+      <div class="col-md-4 col-sm-6 col-12 text-white d-flex flex-column justify-content-end main-content pb-5 mb-5 ps-5">
+        <h4 class="text-1" id="animate-1">RECENT LAUNCH</h4>
+        <h2 class="crs-heading pb-3 text-2" id="animate-2">EUTELSAT 10B MISSION</h2>
+        <div>
+          <button class="watch-button text-white text-3" id="animate-3">REWATCH</button>
+        </div>
+      </div>
+  </div>
+  </section>
+  <section class="container-fluid background-3" onmouseover="animated()">
+    <div class="row h-100 on-viewport">
+      <div class="col-md-4 col-sm-6 col-12 text-white d-flex flex-column justify-content-end main-content pb-5 mb-5 ps-5">
+        <h2 class="crs-heading pb-3 text-2" id="animate-4">STARSHIP SELECTED BY NASA TO SUPPORT SUSTAINED LUNAR EXPLORATION</h2>
+        <div>
+          <button class="watch-button text-white text-3" id="animate-5">LEARN MORE</button>
+        </div>
+      </div>
+  </div>
+  </section>
+  <section class="container-fluid background-4" onmouseover="animatedTwo()">
+    <div class="row h-100 on-viewport">
+      <div class="col-md-4 col-sm-6 col-12 text-white d-flex flex-column justify-content-end main-content pb-5 mb-5 ps-5">
+        <h2 class="crs-heading pb-3 text-2" id="animate-6">STARSHIP UPDATE</h2>
+        <div>
+          <button class="watch-button text-white text-3" id="animate-7">LEARN MORE</button>
+        </div>
+      </div>
+  </div>
+  </section>
+  <footer class="container-fluid d-flex bg-black text-white justify-content-center pt-5 pb-5">
+        <p class="spacex">SPACEX	&#169; 2022</p>
+        <p class="footer-text">TWITTER</p>
+        <p class="footer-text">YOUTUBE</p>
+        <p class="footer-text">INSTAGRAM</p>
+        <p class="footer-text">FLICKER</p>
+        <p class="footer-text">LINKEDIN</p>
+        <p class="footer-text">PRIVACY POLICY</p>
+        <p class="footer-text">SUPPLIERS</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
